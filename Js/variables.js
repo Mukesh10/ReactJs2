@@ -54,13 +54,47 @@ console.log(data);
 {
      // local variable
     let data = 200;
-    console.log(data);
+   // console.log(data);
 
 }
 
 console.log(data);
 
-/********* 1/Jan/2022 ************/
+/********* 10/Jan/2022 ************/
+
+
+for(let i = 0; i< 5 ; i++){
+    console.log("i value is "+i);
+}
+
+var d = 100;
+
+{
+  var d = 200;
+//  console.log(d);
+}
+console.log(d);
+
+
+// breaking rules 
+
+let value = 100;
+// var value = 200;
+
+console.log("value :"+value);
+test();
+function test(){
+    console.log("my name is funtion");
+}
+
+//const  *****************************************
+
+const c = 100;
+// c = 200;
+console.log("const is "+c);
+
+
+
 
 
 
