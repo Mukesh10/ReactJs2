@@ -1,0 +1,53 @@
+<h1>Welcome </h1>
+<script>
+
+/**** Start Annoymous Function */
+
+    let fun1 = () => {
+        return "Welcome to arrow functions";
+    }
+    console.log(fun1());
+
+    let fun_one = (param1,param2,param3) => {
+        console.log(param1 , param2, param3);
+    }
+
+    fun_one(undefined, "Hello2"); // assigning undefined it is called as hoisting..because in thired parameter we have not assign the value.
+
+    //If only one parameter then () is optional.
+      let fun_two = param1 => {console.log(param1)};
+
+      fun_two();
+      fun_two("hello");
+      fun_two(null);
+      
+      let network_call = (successCallBack, errorCallBack) =>{
+       console.log( successCallBack());
+       console.log(errorCallBack());
+      } 
+      network_call( () => {return "Sucess"}, ()=> {return "Error"}   ) ;
+
+
+      let fun_four = (param1,param2 = "Hello",...param3) => {
+        console.log(param1,param2,param3);
+      }
+
+      fun_four();
+      fun_four("Hello1");
+      fun_four("Hello1",undefined,"Hello_3");
+      fun_four("Hello1",undefined,"Hello_3","Hello_4");
+      fun_four(undefined,undefined,undefined);
+      fun_four(null,null,null);
+
+/******Start Generator Functions Example  */
+
+
+/****** Generator Functions Example End */
+
+
+
+
+    /**** End Annoymous Function */
+
+
+</script>
