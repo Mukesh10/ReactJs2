@@ -1,0 +1,99 @@
+<script>
+    let obj = {
+        "sub_one"   : "ReactJs",
+        "sub_two"   : "NodeJs",
+        "sub_three" : "MongoDB"
+    }
+    console.log(obj.sub_one, obj.sub_two,obj.sub_three);
+
+    let obj2 = {
+          "key1" : "value1",
+          "key2" : "value2",
+          "key3" : "value3",
+           101   :  10101    
+    }
+      //for in loop for iterator purpose.. introduced in ES6
+      for(let k in obj2){
+          console.log(k +" ->"+obj2[k] +" -> "+ typeof k);
+      }
+
+      console.log("Get All Keys "+Object.keys(obj));
+      console.log("Get All Values "+Object.values(obj));
+
+      console.log("obj2 data type is "+typeof obj2);
+      let str = JSON.stringify(obj2);
+      console.log("obj2 data type is "+str);
+      console.log("type  of  "+ typeof str);
+      let co = JSON.parse(str);
+      console.log("converted object is  "+ co);
+      console.log("type  of  co "+ typeof co);
+
+      let obj3 =  {
+            "key1" : "Hello_1"
+      }
+
+      let obj4 =  {
+           ...obj3,
+            "key2" : "Hello_2"
+      }
+      console.log(obj4);
+
+      let obj5 =  {
+           ...obj3,
+            "key5" : "Hello_5",
+            ...obj4,
+ 
+        }
+      console.log(obj5);
+
+console.log("*********** Descricting process***********");
+
+let desObj =  {
+            "key1" : {"sub_one":"ReactJs"},
+            "key2" : {"sub_two":"NodeJs"},
+        }
+
+        const {key1, key2} = desObj;
+        console.log(key1,key2);
+        const {sub_two} = key2;
+        console.log(sub_two);
+
+        console.log("*********** Array Of Object***********");
+
+        let arr = [
+            {"p_id" : 111,"p_name" : "p_one","p_cost": 10000},
+            {"p_id" : 222,"p_name" : "p_two","p_cost": 20000},
+            {"p_id" : 333,"p_name" : "p_three","p_cost": 30000},
+            {"p_id" : 444,"p_name" : "p_four","p_cost": 40000},
+            {"p_id" : 555,"p_name" : "p_five","p_cost": 50000},
+        ];
+
+        document.write(`
+           <table border = "1" 
+               align = "center",
+               cellpadding = "10px",
+               cellspacing = "10px">
+              <tr>
+               <th>Sr.No </th>   
+               <th> prod Id </th>   
+               <th>Prod Name </th>   
+               <th> Prod Cost </th>   
+              </tr>
+        `);
+
+        arr.forEach((element, index) => {
+            console.log(element, index);
+        document.write(`
+                        <tr>
+                            <td> ${index + 1}</td>
+                            <td> ${element.p_id}</td>
+                            <td> ${element.p_name}</td>
+                            <td> ${element.p_cost}</td>
+                            </tr>
+                        `)
+        });
+
+  document.write(`</table>`);
+
+
+ </script>   

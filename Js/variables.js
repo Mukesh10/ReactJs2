@@ -87,11 +87,18 @@ function test(){
     console.log("my name is funtion");
 }
 
-//const  *****************************************
+/**** const keyword *****/ 
 
 const c = 100;
 // c = 200;
 console.log("const is "+c);
+const cArr = [10,20,30,40,50];
+console.log("Before Modification cArr : "+cArr);
+
+cArr[0]  = 100;
+console.log("After Modification cArr : "+cArr);
+ cArr[5] = 600;
+ console.log("After Modification cArr : "+cArr);
 
 
 
