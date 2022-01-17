@@ -1,0 +1,39 @@
+{
+  "studentData": [
+    {
+        "id" : 101,
+        "studName" : "Mukesh Rakh",
+        "Address" : "Pune",
+        "education" : "MCA"
+    },
+    {
+        "id" : 102,
+        "studName" : "Mayur Rakh",
+        "Address" : "Pune",
+        "education" : "BCA"
+    },
+    {
+        "id" : 103,
+        "studName" : "Durga ",
+        "Address" : "Pune",
+        "education" : "B.E ENTC"
+    },
+    {
+        "id" : 104,
+        "studName" : "Ramesh",
+        "Address" : "Pune",
+        "education" : "Computer Engineer"
+    },
+    {
+        "id" : 105,
+        "studName" : "Rudra",
+        "Address" : "Mumbai",
+        "education" : "MBA"
+    }
+
+
+
+
+  ]
+    
+}
