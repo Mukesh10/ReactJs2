@@ -1,0 +1,102 @@
+//varialese :
+
+1)variables are used to store the data .
+Exm :
+String , number , boolean, ....
+
+2) We will declare the variables with the 
+ var/ const/let keyword.
+
+ 3) let and const keywrod introduced in ES6.
+
+4) Variables should constains a-z,A-Z, 0-9, $ and _.
+
+5) Variable should not start with digits.
+
+Syntax :
+
+Javascript :
+
+var/let/const variableName  = value.
+
+TypeScirpt :
+
+var/let/const variableName : datatype = value.
+
+Example :
+var msg : string = "Welcome To Type Script ..."
+console.log(msg);
+
+
+**********8**Function : 25 -Jan - 2022
+...........................
+ -Particular business logic called as function.
+ -Function are used to reused the business logic.
+ -We have two type of functions .
+  1) Named functions :
+  2) Annoymous function / Arrow functions/ 
+    name less nctions / Lamdba function/  callback function.
+
+1) Named Fucntions :
+   ..................
+  The function with the name is called as names functions.
+  We will defined named functions with the "function" keyword.
+  Syntax :
+         Syntax devide into two categories :
+          i)  function defination ...
+          ii) function calling ...
+
+    i) Function Defination :
+        function functionname(param1 : datatype,
+                            param2 :datatype,param..n : datatype...n){
+            //business logic ...
+        }
+    ii) Function calling :
+        functionname(arg1,arg2,arg3....arg ..n);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

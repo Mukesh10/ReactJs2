@@ -1,0 +1,16 @@
+// install json-server :
+
+1)Install :
+npm install -g json-server
+
+2)Check Installed Version :
+  json-server --Version
+
+3)Load file :
+   json-server --watch js1.demo
+
+//use postman for save , delete record on json-server.
+
+
+
+

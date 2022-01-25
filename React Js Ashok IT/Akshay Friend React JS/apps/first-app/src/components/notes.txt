@@ -1,0 +1,58 @@
+ /* Component Nesting :
+                Placeing a component in another component.
+           Props : (Nothing but property)
+                   Data received from parent component is called as props.
+
+          */
+
+
+** Props :
+
+ * Data  received from parent to child.
+  exm :
+          {
+          /*  // single object pass
+           <EmpComponent empObject={emp1} sal="20000" />
+           <EmpComponent empObject={emp2} sal="40000" /> 
+         */
+        }
+
+
+        { {  employees.map((element, index) => {
+            return  <EmpComponent empObject = {element} sal = "50000" key = {index}></EmpComponent>
+          })
+        } 
+        }
+
+
+
+
+ -----------------------------------------------------------------
+
+** State :
+   -------
+ * Data of it's own.
+ * state can not be modified directly.
+
+ useStack hook :
+ ...............
+ 
+     hook nothing but function.
+     Syntax : 
+        let  [state,setState] = useState(initialSate);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
